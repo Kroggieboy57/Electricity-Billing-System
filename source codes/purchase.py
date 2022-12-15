@@ -19,8 +19,9 @@ if choice==1:
         c1.execute("select Product_name,Stock,Price_per from elect where Product_no="+str(v_product_no))
         data=c1.fetchall()
         for row in data:
+            k=row[0]
             print("Available Stock Details ".center(30," "))
-            print(f"Product name: {row[0]}".center(30," "))
+            print("Product Name: ",k)
             print(f"Stock: {row[1]}".center(30," "))
             print("Price per product Rs:",row[2])
             conn.commit()
@@ -29,7 +30,7 @@ if choice==1:
             print("2.No")
             ch=int(input("Enter the Choice - "))
             if ch==1:
-                q=int(input("enter how much do you need="))
+                q=int(input("Enter Quantity - "))
                 g=int(row[2])*q
                 print("The amount is Rs:",g)
                 print("Do you want to continue:")
@@ -40,11 +41,17 @@ if choice==1:
                     c1.execute("update elect set Stock=Stock- "+ str(q) + " where Product_no="+str(v_product_no))
                     print(" Items purchased successfully")
                     conn.commit()
+                    print(f"Date:{t_date.day}/{t_date.month}/{t_date.year}\tTIME: {t_time.hour}:{t_time.minute}")
+                    print("Invoice".center(50,"#"))
+                    print("Item\tQty\tPrice")
+                    print(f"{k}\t{q}\t{g}")
+                    print(" Paid ".center(50,"-"))
                     print("Do you want to buy any more:")
                     print("1.Yes")
                     print("2.No")
                     dad=int(input("Enter the choice:"))
                     if dad==1:
+
                         import purchase
                     elif dad==2:
                         print("Thank you")

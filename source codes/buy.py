@@ -33,12 +33,17 @@ for row in data:
             c1.execute("update elect set Stock=Stock- "+ str(q) + " where Product_no="+str(z))
             print(" Items purchased successfully")
             conn.commit()
+            print(f"Date:{t_date.day}/{t_date.month}/{t_date.year}\tTIME: {t_time.hour}:{t_time.minute}")
+            print("Invoice".center(50,"#"))
+            print("Item\tQty\tPrice")
+            print(f"Item\t{q}\t{g}")
+            print(" Paid ".center(50,"-"))
         elif cho==2:
             print("Thank you")
             print("Any kind of bulk or small orders of elctronics contact The Motherboard electronics shop")
             print("================================================================================")
         else:
-            print("ERROR 404:DTETCTED")
+            print("ERROR 404:DETECTED")
     elif ch==2:
         print("Thank you")
         print("Any kind of bulk or small orders of elctronics contact The Motherboard electronics shop")
