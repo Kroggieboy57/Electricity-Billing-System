@@ -186,7 +186,6 @@ elif ch1==3:
         if chi8==1:
             c1.execute("delete from users where user_code={}".format(de))
             print("YOUR USER ACCOUNT DELETED SUCCESSFULLY")
-            print("THANK YOU FOR BEING WITH US")
             conn.commit()
         elif chi8==2:
             print("THANK YOU")

@@ -22,9 +22,9 @@ for row in data:
     print("2.No")
     ch=int(input("Enter the Choice - "))
     if ch==1:
-        q=int(input("enter how much do you need="))
+        q=int(input("Enter Quantity - "))
         g=int(row[2])*q
-        print("The amount is Rs:",g)
+        print("The amount is ₹",g)
         print("Do you want to continue:")
         print("1.Yes")
         print("2.No")

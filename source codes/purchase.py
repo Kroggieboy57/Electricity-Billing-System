@@ -7,7 +7,7 @@ c1=conn.cursor()
 t_date=datetime.date.today()
 t_time=datetime.datetime.now()
 print("DATE:",t_date.day,"/",t_date.month,"/",t_date.year,"TIME:",t_time.hour ,":",t_time.minute     )
-print("Welcome To SSA Electronics Shop Management System")
+print("Welcome To The Motherboard Electronics Shop Management System")
 print("1.Purchase Items")
 print("2.Stock")
 print("3.Exit")
@@ -48,30 +48,30 @@ if choice==1:
                         import purchase
                     elif dad==2:
                         print("Thank you")
-                        print("Any kind of bulk or small orders of elctronic items contact SSA electronics shop")
+                        print("Any kind of bulk or small orders of elctronic items contact The Motherboard electronics shop")
                         print("================================================================================")
                     else:
                         print("Invalid choice")
-                        print("Any kind of bulk or small orders of elctronic items contact SSA electronics shop")
+                        print("Any kind of bulk or small orders of elctronic items contact The Motherboard electronics shop")
                         print("==============================================================================")
                         
                 elif cho==2:
                     print("Thank you")
-                    print("Any kind of bulk or small orders of elctronic items contact SSA electronics shop")
+                    print("Any kind of bulk or small orders of elctronic items contact The Motherboard electronics shop")
                     print("================================================================================")
                 else:
                     print("ERROR 404:DTETCTED")
             elif ch==2:
                 print("Thank you")
-                print("Any kind of bulk or small orders of elctronic items contact SSA electronics shop")
+                print("Any kind of bulk or small orders of elctronic items contact The Motherboard electronics shop")
                 print("==============================================================================")
             else:
                 print("Invalid choice")
-                print("Any kind of bulk or small orders of elctronic items contact SSA electronics shop")
+                print("Any kind of bulk or small orders of elctronic items contact The Motherboard electronics shop")
                 print("==============================================================================")
     else:
         print("Invalid choice of product number")
-        print("Any kind of bulk or small orders of elctronic items contact SSA electronics shop")
+        print("Any kind of bulk or small orders of elctronic items contact The Motherboard electronics shop")
         print("==============================================================================")
 elif choice==2:
     print("1.Add stock")
@@ -117,13 +117,13 @@ elif choice==2:
             
         else:
             print("Thank you")
-            print("Any kind of bulk or small orders of elctronic items contact SSA electronics shop")
+            print("Any kind of bulk or small orders of elctronic items contact The Motherboard electronics shop")
             print("=======================================================================")
     elif chi==3:
         de='krog'
         da=input("Enter the password:")
         if de==da:
-            print("welcome to ssa electronic shop")
+            print("welcome to The Motherboard electronic shop")
             fi=int(input("enter the new product number(in 6 digits):"))
             fe=input("enter the new product name:")
             st=int(input("enter the stock to be updated:"))
@@ -137,9 +137,9 @@ elif choice==2:
         print("invalid choice")
 elif choice==3:
     print("Thank you")
-    print("Any kind of bulk or small orders of elctronic items contact SSA electronics shop")
+    print("Any kind of bulk or small orders of elctronic items contact The Motherboard electronics shop")
     print("=============================================================================")
 else :
     print("INVALID CHOICE OF OPTION")
-    print("Any kind of bulk or small orders of elctronic items contact SSA electronics shop")
+    print("Any kind of bulk or small orders of elctronic items contact The Motherboard electronics shop")
     print("=============================================================================")
